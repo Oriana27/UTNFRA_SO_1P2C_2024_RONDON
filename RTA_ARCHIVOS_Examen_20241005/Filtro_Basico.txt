@@ -1,0 +1,2 @@
+Total de memoria RAM: 1.9Gi
+Fabricante del chassis: Oracle
