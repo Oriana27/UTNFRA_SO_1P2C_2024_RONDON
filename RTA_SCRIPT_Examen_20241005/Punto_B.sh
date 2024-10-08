@@ -1,6 +1,6 @@
 #!/bin/bash
 echo "Particionando Disco G"
-sudo fdisk /dev/sdc
+sudo fdisk /dev/sdc <<EOF
 n
 p
 
@@ -42,6 +42,8 @@ n
 
 
 w
+EOF
+
 sudo mkfs -t ext4 /dev/sdc1 
 sudo mkfs -t ext4 /dev/sdc2
 sudo mkfs -t ext4 /dev/sdc3
